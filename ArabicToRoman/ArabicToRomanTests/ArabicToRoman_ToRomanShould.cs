@@ -15,6 +15,14 @@ namespace ArabicToRomanTests
         }
 
         [TestMethod]
+        public void ReturnsMMCMXLIVWith2944()
+        {
+            var result = this._arabicToRoman.ToRoman(2944);
+
+            Assert.AreEqual("MMCMXLIV", result, false, string.Empty);
+        }
+
+        [TestMethod]
         public void ReturnsIVWith4()
         {
             var result = this._arabicToRoman.ToRoman(4);
