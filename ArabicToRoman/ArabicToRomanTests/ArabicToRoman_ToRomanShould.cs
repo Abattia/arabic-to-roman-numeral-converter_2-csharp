@@ -15,6 +15,14 @@ namespace ArabicToRomanTests
         }
 
         [TestMethod]
+        public void ReturnsIVWith4()
+        {
+            var result = this._arabicToRoman.ToRoman(4);
+
+            Assert.AreEqual("IV", result, false, string.Empty);
+        }
+
+        [TestMethod]
         public void ReturnsIIIWith3()
         {
             var result = this._arabicToRoman.ToRoman(3);

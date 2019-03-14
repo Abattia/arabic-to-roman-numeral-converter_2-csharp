@@ -10,15 +10,15 @@ namespace ArabicToRomanServices
     {
         public string ToRoman(int anArabic)
         {
-            if (anArabic == 3)
+            string result = string.Empty;
+
+            do
             {
-                return "III";
-            }
-            if (anArabic == 2)
-            {
-                return "II";
-            }
-            return "I";
+                result += "I";
+                anArabic -= 1;
+            } while (anArabic >= 1);
+
+            return result;
         }
     }
 }
